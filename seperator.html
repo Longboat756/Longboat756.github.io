@@ -7,23 +7,49 @@
 
     <style>
         body {
-            color: #1ABC9C;
+            background-color: #1ABC9C;
 
         }
 
         .seperator hr {
 
             display: inline-block;
-            width: 80px;
+            width: 114px;
+            height: 4px;
+            color: white;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
 
         }
 
         .seperator i {
             display: inline-block;
             margin: 0 10px;
-            font-size: 23;
-            color: aliceblue;
+            font-size: 22;
+            color: white;
         }
+        
+        .dark hr{
+            
+            background-color: black;
+        }
+        
+        .dark i{
+            
+            color: black;
+        }
+        
+        .red hr{
+            
+            background-color: red;
+        }
+        
+        .red i{
+            
+            color: red;
+        }
+        
     </style>
 
 </head>
@@ -31,7 +57,21 @@
 <body>
 
 
-    <div class="seperator">
+    
+    
+    <div class="seperator ">
+        <hr>
+        <i class="fa-solid fa-star"></i>
+        <hr>
+    </div>
+    
+    <div class="seperator dark">
+        <hr>
+        <i class="fa-solid fa-star"></i>
+        <hr>
+    </div>
+    
+    <div class="seperator red">
         <hr>
         <i class="fa-solid fa-star"></i>
         <hr>

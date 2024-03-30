@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        div {
+            /*border: solid;*/
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /*            background-color: deepskyblue;*/
+            margin: auto;
+            margin-top: 50px;
+            transition: 1s;
+
+
+            /*x,y,blurry,size, colour*/
+            /*            box-shadow: 0px 0px 0px 0px gray;*/
+
+        }
+
+        div:hover {
+            background-color: deepskyblue;
+            box-shadow: 0px 0px 5px 8px gray;
+
+
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div id="btn"></div>
+
+    <script>
+        let blue = true;
+        btn.addEventListener('click', function() {
+            if (blue === true) {
+                btn.style.backgroundColor = 'red';
+                blue = false;
+            } else {
+                btn.style.backgroundColor = 'deepskyblue';
+                blue = true;
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>
