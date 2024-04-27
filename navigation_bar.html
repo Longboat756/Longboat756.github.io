@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <title>Document</title>
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
@@ -13,8 +18,9 @@
         nav {
             background-color: #2f3c50;
             color: white;
-            padding: 27px 33px;
+            padding: 27px 96px;
             position: relative;
+            font-family: "Montserrat", sans-serif
         }
 
         nav h2 {
@@ -29,6 +35,15 @@
 
         nav li {
             display: inline-block;
+            font-weight: bold;
+            margin-left: 32px;
+            transition: 0.15s;
+        }
+
+
+        nav li:hover {
+            color: #1abc9c;
+
         }
 
         nav ul {
@@ -40,6 +55,7 @@
             margin: auto;
 
         }
+
     </style>
 </head>
 
@@ -57,4 +73,6 @@
     </header>
 
 
-</body></html>
+</body>
+
+</html>
