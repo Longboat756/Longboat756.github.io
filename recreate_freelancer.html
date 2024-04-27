@@ -12,10 +12,7 @@
             margin: 0;
         }
 
-        /*header*/
-
-
-
+ 
         header {
             background-color: #1abc9c;
             text-align: center;
@@ -158,10 +155,44 @@
             color: white;
         }
 
+
+
+        /*Contact*/
+
+        #contact {
+            background-color: white;
+            color: #2C3E50;
+        }
+
+        .seperator.contact hr {
+            color: #2C3E50;
+        }
+
+        .seperator.contact i {
+            color: #2C3E50;
+        }
+
+        #contact input {
+
+            border: none;
+            color: gray;
+            font-size: 23px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #contact textarea {
+
+            border: none;
+            color: gray;
+            font-size: 23px;
+        }
+
     </style>
 </head>
 
 <body>
+
 
     <header>
         <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="">
@@ -245,6 +276,28 @@
 
                 </main>
 
-</body>
 
+                <section id="contact">
+                    <h1>CONTACT ME</h1>
+
+                    <div class="seperator contact">
+                        <hr>
+                        <i class="fa-solid fa-star"></i>
+                        <hr>
+                    </div>
+
+                    <main>
+                        <input name="name" type="text" placeholder="Full name">
+                        <hr>
+                        <input name="email" type="email" placeholder="Email Address">
+                        <hr>
+                        <input name="phone number" type="tel" placeholder="Phone Number">
+                        <hr>
+                        <textarea name="message" id="" cols="30" rows="10">Message</textarea>
+                        <hr>
+                        <button type="submit">Send</button>
+
+                    </main>
+
+</body>
 </html>
