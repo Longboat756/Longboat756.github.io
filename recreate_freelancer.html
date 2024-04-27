@@ -18,6 +18,7 @@
             background-color: #2f3c50;
             color: white;
             padding: 27px 33px;
+            position: relative;
         }
 
         .nav h2 {
@@ -32,6 +33,16 @@
 
         .nav li {
             display: inline-block;
+        }
+
+        .nav ul {
+            position: absolute;
+            right: 33px;
+            top: 0;
+            bottom: 0;
+            height: 19px;
+            margin: auto;
+
         }
 
         header.pic {
@@ -131,6 +142,8 @@
             padding: 50px 0px;
         }
 
+
+
         .seperator.about {
             color: white;
         }
@@ -147,6 +160,7 @@
             color: white;
             font-size: 23px;
             display: inline-block;
+            text-align: center;
 
         }
 
@@ -155,6 +169,7 @@
             padding-bottom: 15px;
             widows: 40px;
             border: white;
+            display: inline-block;
         }
 
         #about button {
@@ -166,8 +181,25 @@
             width: 200px;
             height: 70px;
             color: white;
+            display: block;
+            margin: auto;
         }
 
+        @media all and (min-width: 1024px) {
+            #about p {
+                display: inline-block;
+                width: 390px;
+                padding-right: 10px;
+                padding-left: 10px;
+
+            }
+        }
+
+        @media all and (min-width: 1440px) {
+            #about p {
+                width: 400px;
+            }
+        }
 
         /*Footer*/
 
@@ -180,7 +212,7 @@
 
         /*Contact*/
         #contact h1 {
-            padding-top: 10px;
+            padding-top: 40px;
 
 
         }
@@ -213,6 +245,15 @@
             color: gray;
             font-size: 23px;
         }
+
+        @media all and (min-width: 1024px) {
+            #footer div {
+                display: inline-block;
+                text-align: center;
+                margin: auto;
+            }
+        }
+
 
         @media all and (min-width: 1024px) {
             #portfolio img {
