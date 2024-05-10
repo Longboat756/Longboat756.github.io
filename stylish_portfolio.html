@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <Style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
         body {
             padding: 0px;
             margin: 0px;
@@ -20,22 +25,23 @@
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
-            padding-top: 100px;
-            padding-bottom: 120px;
+            padding-top: 120px;
+            padding-bottom: 140px;
             font-family: "Source Sans 3", sans-serif;
+            background-position: 0 -240px;
 
         }
 
         #title h1 {
-            font-size: 80px;
-            margin-bottom: -30px;
+            font-size: 100px;
+            margin-bottom: -5px;
         }
 
         #title p {
-            font-size: 25px;
+            font-size: 30px;
             font-style: italic;
             font-weight: bold;
-            padding-bottom: 30px;
+            padding-bottom: 50px;
         }
 
         #title button {
@@ -63,13 +69,13 @@
         #about h2 {
 
             font-size: 30px;
-            margin-bottom: -5px;
+            margin-bottom: 0px;
         }
 
         #about p {
             color: #808080;
             font-size: 19px;
-            padding-bottom: 40px;
+            padding-bottom: 50px;
         }
 
         #about button {
@@ -84,8 +90,44 @@
             margin-bottom: 100px;
         }
 
+        #callout main {
+            padding-top: 200px;
+            font-family: "Source Sans 3", sans-serif;
+            text-align: center;
+            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-4.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 -60px;
+        }
+
+
+        #callout h1 {
+            font-size: 50px;
+            padding-bottom: 50px;
+            width: 400px;
+            margin: auto;
+        }
+
+        #callout button {
+            width: 200px;
+            height: 70px;
+            background-color: #1D809F;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            margin-bottom: 240px;
+        }
+
+
+        #callout span {
+            font-style: italic;
+        }
+
 
         }
+
     </Style>
 </head>
 
@@ -118,4 +160,18 @@
     </section>
 
 
-</body></html>
+
+    <section id="callout">
+        <main>
+            <h1>Welcome to <span>your</span> next website!</h1>
+
+
+            <button>Download Now!</button>
+
+        </main>
+    </section>
+
+
+</body>
+
+</html>
