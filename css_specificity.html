@@ -10,21 +10,32 @@
             font-size: 50px;
         }
 
-        li {
-            color: blue;
+        #firstid {
+            color: red;
         }
 
         .first {
             color: green;
         }
 
+        /*long path>short path*/
+        /*last rule overrides first rule*/
+
+        body ul li {
+            color: aqua !important;
+        }
+
+        li {
+            color: blue !important;
+        }
+
     </style>
 </head>
 
 <body>
-
+    <h1>!important>inline css>id>class>tag</h1>
     <ul>
-        <li class="first">Hiking</li>
+        <li style="color: purple" class="first" id="firstid">Hiking</li>
         <li>Talking</li>
         <li>Playing</li>
         <li>Pickleball/tennis</li>
