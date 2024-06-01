@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .item {
+      width: 100px;
+      border: solid;
+      opacity: 0.8;
+    }
+
+    .left {
+      height: 100px;
+      float: left;
+      background-color: lime;
+    }
+
+    .right {
+      height: 200px;
+      float: right;
+      background-color: deepskyblue;
+    }
+
+    p {
+      border: solid red;
+      /*  don't put float element on my left*/
+      /*      clear: left;*/
+      clear: right;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="item left"></div>
+  <div class="item right"></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est tempora earum delectus dolore mollitia, reiciendis in provident rerum praesentium eaque.</p>
+
+
+</body></html>

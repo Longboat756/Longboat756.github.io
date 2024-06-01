@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Stylish Portfolio</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <Style>
         * {
@@ -187,7 +188,147 @@
         }
 
 
+        #portfolio main {
+            padding-top: 200px;
+            font-family: "Source Sans 3", sans-serif;
+            background-color: white;
 
+
+        }
+
+        #portfolio h1 {
+            font-size: 50px;
+            padding-bottom: 50px;
+            width: 400px;
+            margin: auto;
+        }
+
+        #portfolio h5 {
+            color: yellow;
+        }
+
+
+        #portfolio img {
+
+            display: inline-block;
+            margin: auto;
+            width: 500px;
+            text-align: center;
+            height: 300px;
+
+        }
+
+        #portfolio main {
+            background-color: white;
+            text-align: center;
+            padding-top: 50px;
+            font-family: "Source Sans 3", sans-serif;
+            padding-bottom: 100px;
+
+        }
+
+        #portfolio div {
+
+            padding-top: 60px;
+
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+            padding: 0px;
+            margin: 0px;
+            color: white;
+        }
+
+        #portfolio h5 {
+            color: #ECB807;
+        }
+
+        #portfolio h1 {
+            color: #212529;
+        }
+
+
+        #portfolio div {
+            width: 500px;
+            height: 300px;
+            display: inline-block;
+            margin: auto;
+        }
+
+        #portfolio div#one {
+            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        #portfolio div#two {
+            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        #portfolio div#three {
+            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        #portfolio div#four {
+            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-4.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        #portfolio div h4 {
+            position: relative;
+            top: 200px;
+            right: 180px;
+        }
+
+        #portfolio div p {
+            position: relative;
+            top: 200px;
+        }
+
+        #resist main {
+            background-color: #1D809F;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 140px;
+            font-family: "Source Sans 3", sans-serif;
+
+        }
+
+        #resist button#click {
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            width: 130px;
+            height: 55px;
+            margin: 10px;
+        }
+
+        #resist button#look {
+            background-color: #292D30;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 130px;
+            height: 55px;
+            margin: 10px;
+        }
+
+        #resist h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
 
         }
 
@@ -195,26 +336,6 @@
 </head>
 
 <body>
-
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-        <i class="icon-menu"></i>
-    </button>
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Start Bootstrap</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#callout">Portfolio</a></li>
-            </ul>
-        </div>
-    </div>
 
 
 
@@ -294,6 +415,66 @@
 
         </main>
     </section>
+
+
+
+
+    <section id="portfolio">
+
+        <main>
+
+            <h5>PORTFOLIO</h5>
+            <h1>Recent Projects</h1>
+
+
+
+            <div id="one">
+                <h4>Stationary</h4>
+                <p>A yellow pencil with envelopes on a clean, blue backdrop! </p>
+            </div>
+
+
+            <div id="two">
+                <h4>ICE CREAM</h4>
+                <p>A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+            </div>
+
+
+            <div id="three">
+                <h4>STRAWBERRIES</h4>
+                <p>Strawberries are such a tasty snack, especially with some sugar on top!</p>
+            </div>
+
+
+            <div id="four">
+                <h4>WORKSPACE</h4>
+                <p>A yellow workspace with some scissors, pencils, and other objects.</p>
+            </div>
+
+
+
+
+        </main>
+    </section>
+
+
+
+    <section id="resist">
+        <main>
+            <h1>The buttons below are impossible to resist...</h1>
+
+            <button id="click" class="button">Click Me!</button>
+            <button id="look" class="button">Look at Me!</button>
+
+
+
+
+
+
+
+        </main>
+    </section>
+
 
 
 </body>
