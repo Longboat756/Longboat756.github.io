@@ -45,13 +45,7 @@
 
         }
 
-        header.pic {
-            background-color: #1abc9c;
-            text-align: center;
-            color: white;
-            padding: 100px 0;
-            padding-bottom: 70px;
-        }
+
 
         .seperator {
             text-align: center;
@@ -82,7 +76,6 @@
 
         header.pic h1 {
             font-size: 46px;
-            margin-bottom: 24px;
         }
 
         header.pic p {
@@ -97,7 +90,6 @@
 
         #portfolio {
             text-align: center;
-            padding-bottom: 50px;
         }
 
         section h1 {
@@ -122,7 +114,6 @@
             border-radius: 29px;
             padding-left: 20px;
             padding-right: 20px;
-            padding-bottom: 20px;
             padding-top: 20px;
         }
 
@@ -139,7 +130,6 @@
             background-color: #1abc9c;
             text-align: center;
             color: white;
-            padding: 50px 0px;
         }
 
 
@@ -170,6 +160,9 @@
             widows: 40px;
             border: white;
             display: inline-block;
+            vertical-align: top;
+
+
         }
 
         #about button {
@@ -236,7 +229,6 @@
             color: gray;
             font-size: 23px;
             margin-top: 20px;
-            margin-bottom: 10px;
         }
 
         #contact textarea {
@@ -251,6 +243,7 @@
                 display: inline-block;
                 text-align: center;
                 margin: auto;
+                vertical-align: top;
             }
         }
 
@@ -262,7 +255,6 @@
                 padding-left: 7px;
                 padding-right: 7px;
                 padding top: 5px;
-                padding-bottom: 5px;
                 border-radius: 29px;
             }
         }
@@ -274,6 +266,37 @@
             border-radius: 50%;
             color: white;
             border: solid white;
+        }
+
+        #copyright main {
+        background-color: #1A252F;
+        height: 100px;
+        font-size: 20px;
+        text-align: center;
+        }
+
+        #contact {
+            text-align: center;
+            margin: auto;
+
+        }
+
+        #contact hr {
+            width: 500px;
+        }
+
+        #about {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+
+        #footer {
+            margin: auto;
+            display: inline-block;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
     </style>
@@ -327,77 +350,89 @@
 
             <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png" alt="">
         </main>
+    </section>
 
 
 
-        <section id="about">
-            <h1>ABOUT</h1>
+    <section id="about">
+        <h1>ABOUT</h1>
 
-            <div class="seperator about">
-                <hr>
-                <i class="fa-solid fa-star"></i>
-                <hr>
+        <div class="seperator about">
+            <hr>
+            <i class="fa-solid fa-star"></i>
+            <hr>
+        </div>
+
+        <main>
+            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+
+            <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+
+            <button>Free Download!</button>
+        </main>
+
+    </section>
+
+
+    <section id="contact">
+        <h1>CONTACT ME</h1>
+
+        <div class="seperator contact">
+            <hr>
+            <i class="fa-solid fa-star"></i>
+            <hr>
+        </div>
+
+        <main>
+            <input name="name" type="text" placeholder="Full name">
+            <hr>
+            <input name="email" type="email" placeholder="Email Address">
+            <hr>
+            <input name="phone number" type="tel" placeholder="Phone Number">
+            <hr>
+            <textarea name="message" id="" cols="30" rows="10">Message</textarea>
+            <hr>
+            <button type="submit">Send</button>
+
+        </main>
+    </section>
+
+    <section id="footer">
+
+        <main>
+            <div>
+                <h2>Location</h2>
+                <p>2215 John Daniel Drive
+                    Clark, MO 65243</p>
             </div>
 
-            <main>
-                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+            <div>
+                <h2>AROUND THE WEB</h2>
 
-                <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-solid fa-basketball"></i>
+            </div>
 
-                <button>Free Download!</button>
-            </main>
-
-
-            <section id="contact">
-                <h1>CONTACT ME</h1>
-
-                <div class="seperator contact">
-                    <hr>
-                    <i class="fa-solid fa-star"></i>
-                    <hr>
-                </div>
-
-                <main>
-                    <input name="name" type="text" placeholder="Full name">
-                    <hr>
-                    <input name="email" type="email" placeholder="Email Address">
-                    <hr>
-                    <input name="phone number" type="tel" placeholder="Phone Number">
-                    <hr>
-                    <textarea name="message" id="" cols="30" rows="10">Message</textarea>
-                    <hr>
-                    <button type="submit">Send</button>
-
-                </main>
+            <div>
+                <h2>ABOUT FREELANCER</h2>
+                <p>Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap .</p>
+            </div>
 
 
-                <section id="footer">
+        </main>
+    </section>
 
-                    <main>
-                        <div>
-                            <h2>Location</h2>
-                            <p>2215 John Daniel Drive
-                                Clark, MO 65243</p>
-                        </div>
+    <section id="copyright">
+        <main>
 
-                        <div>
-                            <h2>AROUND THE WEB</h2>
-
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-linkedin-in"></i>
-                            <i class="fa-solid fa-basketball"></i>
-                        </div>
-
-                        <div>
-                            <h2>ABOUT FREELANCER</h2>
-                            <p>Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap .</p>
-                        </div>
+            <p>Copyright © Your Website 2023</p>
+        </main>
 
 
-                    </main>
 
-
+    </section>
 
 
 </body>

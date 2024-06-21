@@ -10,7 +10,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <Style>
         * {
@@ -18,9 +20,46 @@
             padding: 0px;
         }
 
-        body {
-            padding: 0px;
-            margin: 0px;
+
+        ul {
+            list-style-type: none;
+
+        }
+
+        li button {
+            background-color: #1D809F;
+            border: 10px #1D809F;
+            box-sizing: border-box;
+            width: 300px;
+            height: 60px;
+            text-align: left;
+            color: white;
+            position: relative;
+            right: 50px;
+            padding-left: 10px;
+        }
+
+        li button:hover {
+            background-color: #4A9AB2;
+        }
+
+
+
+        .offcanvas.offcanvas-end {
+            background-color: #1D809F;
+            width: 254px;
+            z-index: 999;
+            color: white;
+        }
+
+        #toggle_offcanvas {
+            position: fixed;
+            right: 15px;
+            top: 14px;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 12px 17px;
+            line-height: 17px;
         }
 
         #title main {
@@ -31,21 +70,24 @@
             padding-top: 120px;
             padding-bottom: 140px;
             font-family: "Source Sans 3", sans-serif;
-            background-position: center center;
-
-
+            background-position: 43%;
         }
 
         #title h1 {
-            font-size: 100px;
-            margin-bottom: -5px;
+            font-size: 68px;
+            margin-bottom: 0px;
+            width: 400px;
+            vertical-align: middle;
+            margin: auto;
+            font-weight: bold;
         }
 
         #title p {
-            font-size: 30px;
+            font-size: 23px;
             font-style: italic;
             font-weight: bold;
-            padding-bottom: 50px;
+            padding-bottom: 45px;
+            margin: auto;
         }
 
         #title button {
@@ -73,21 +115,25 @@
         #about h2 {
 
             font-size: 30px;
-            margin-bottom: 0px;
+            margin-bottom: 10px;
+            font-weight: 600;
         }
 
         #about p {
             color: #808080;
-            font-size: 19px;
-            padding-bottom: 50px;
+            font-size: 23px;
+            padding-bottom: 30px;
+            font-weight: 325;
+            width: 450px;
+            margin: auto;
         }
 
         #about button {
-            width: 200px;
-            height: 75px;
+            width: 180px;
+            height: 68px;
             background-color: #212529;
             border: none;
-            border-radius: 10px;
+            border-radius: 7px;
             text-align: center;
             font-size: 20px;
             color: white;
@@ -105,14 +151,20 @@
 
         #service p {
             color: #ECB807;
-            font-size: 20px;
+            font-size: 17px;
             font-family: "Source Sans 3", sans-serif;
             font-weight: bold;
-            padding: -5px;
         }
 
         #service h1 {
             font-size: 45px;
+            font-weight: 700;
+            padding-bottom: 40px;
+        }
+
+        #service h2 {
+            font-weight: 800;
+
         }
 
 
@@ -131,6 +183,13 @@
             color: #1D809F;
             font-size: 40px;
             margin: auto;
+            vertical-align: top;
+        }
+
+        #service i.fa-heart {
+            color: #BBD9E2;
+            font-size: 17px;
+            line-height: 26px;
         }
 
         #service div {
@@ -143,23 +202,27 @@
             padding-left: 20px;
             padding-right: 20px;
             width: 260px;
+            vertical-align: top;
         }
 
         #service main div p {
             font-size: 17px;
-            color: darkgray;
-            font-weight: 0;
+            color: #BBD9E2;
+            font-weight: 400;
+            padding-bottom: 20px;
+            width: 250px;
+            margin: auto;
         }
 
 
         #callout main {
-            padding-top: 200px;
+            padding-top: 250px;
             font-family: "Source Sans 3", sans-serif;
             text-align: center;
             background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-4.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: 0 -60px;
+            background-position: 50%;
         }
 
 
@@ -168,14 +231,15 @@
             padding-bottom: 50px;
             width: 400px;
             margin: auto;
+            font-weight: 700;
         }
 
         #callout button {
             width: 200px;
-            height: 70px;
+            height: 65px;
             background-color: #1D809F;
             border: none;
-            border-radius: 10px;
+            border-radius: 7px;
             text-align: center;
             font-size: 15px;
             color: white;
@@ -189,7 +253,7 @@
 
 
         #portfolio main {
-            padding-top: 200px;
+            margin-top: 70px;
             font-family: "Source Sans 3", sans-serif;
             background-color: white;
 
@@ -198,25 +262,20 @@
 
         #portfolio h1 {
             font-size: 50px;
-            padding-bottom: 50px;
-            width: 400px;
+            padding-bottom: 55px;
             margin: auto;
+            font-weight: 700;
+            color: #212529;
+
         }
 
         #portfolio h5 {
-            color: yellow;
+            color: #ECB807;
+            font-size: 15px;
+            font-weight: bold;
         }
 
 
-        #portfolio img {
-
-            display: inline-block;
-            margin: auto;
-            width: 500px;
-            text-align: center;
-            height: 300px;
-
-        }
 
         #portfolio main {
             background-color: white;
@@ -230,36 +289,24 @@
         #portfolio div {
 
             padding-top: 60px;
-
-            width: 1000px;
-            height: 600px;
+            height: 300px;
             margin: auto;
             padding: 0px;
-            margin: 0px;
             color: white;
-        }
-
-        #portfolio h5 {
-            color: #ECB807;
-        }
-
-        #portfolio h1 {
-            color: #212529;
-        }
-
-
-        #portfolio div {
-            width: 500px;
+            width: 470px;
             height: 300px;
-            display: inline-block;
-            margin: auto;
         }
+
 
         #portfolio div#one {
             background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-1.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-
+            vertical-align: top;
+            width: 450px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
 
         }
 
@@ -267,6 +314,11 @@
             background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-2.jpg);
             background-size: cover;
             background-repeat: no-repeat;
+            vertical-align: top;
+            width: 450px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
 
         }
 
@@ -274,6 +326,12 @@
             background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-3.jpg);
             background-size: cover;
             background-repeat: no-repeat;
+            vertical-align: top;
+            width: 450px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+
 
         }
 
@@ -281,18 +339,35 @@
             background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-4.jpg);
             background-size: cover;
             background-repeat: no-repeat;
+            vertical-align: top;
+            width: 450px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+
 
         }
 
         #portfolio div h4 {
             position: relative;
             top: 200px;
-            right: 180px;
+            right: 150px;
+            font-size: 14px;
+            font-weight: 800;
         }
 
         #portfolio div p {
             position: relative;
             top: 200px;
+            font-size: 20px;
+            font-weight: 330;
+            width: 430px;
+            text-align: left;
+            left: 30px;
+        }
+
+        #portfolio div p#three {
+            left: 25px;
         }
 
         #resist main {
@@ -326,18 +401,171 @@
         }
 
         #resist h1 {
-            font-size: 40px;
+            font-size: 27px;
+            font-weight: 700;
             margin-bottom: 20px;
         }
 
         }
 
+        #location div {
+            width: 100%;
+        }
+
+        #location div iframe {
+            height: 430px;
+            width: 100%;
+        }
+
+        #location i {
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            line-height: 70px;
+            text-align: center;
+            background-color: #1D809F;
+            color: white;
+            border: none;
+            margin: 10px;
+            margin-top: 70px;
+            margin-bottom: 60px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        #location main {
+            text-align: center;
+
+        }
+
+        #copyright main {
+            text-align: center;
+            color: gray;
+            font-size: 15px;
+            font-family: "Source Sans 3", sans-serif;
+        }
+
+        @media all and (min-width:770px) {
+
+            #title h1 {
+                width: 500px;
+            }
+
+            #about p {
+                width: 700px;
+                font-size: 20px;
+                0
+            }
+
+
+            #portfolio div#one {
+                height: 350px;
+                width: 550px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            #portfolio div#two {
+                height: 350px;
+                width: 550px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            #portfolio div#three {
+                height: 350px;
+                width: 550px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            #portfolio div#four {
+                height: 350px;
+                width: 550px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            #portfolio main {
+                width: 600px;
+                margin: auto;
+            }
+
+            #portfolio div h4 {
+                right: 210px;
+                position: relative;
+
+            }
+
+        }
+
+        @media all and (min-width:1260px) {
+
+            #portfolio div#one,
+            #portfolio div#two,
+            #portfolio div#three,
+            #portfolio div#four {
+                width: 520px;
+                margin: 0px;
+
+            }
+
+
+
+
+            #portfolio main {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+
+            }
+
+            #portfolio div h4 {
+                position: relative;
+                right: 190px;
+            }
+
+
+        }
     </Style>
 </head>
 
 <body>
 
 
+    <button id='toggle_offcanvas' class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <i id='btn_icon' class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="offcanvas offcanvas-end" data-bs-backdrop="false" data-bs-backdrop="static" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Start Bootstrap</h5>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li><a href="#title"><button>Home</button></a></li>
+                <li><a href="#about"><button>About</button></a></li>
+                <li><a href="#service"><button>Services</button></a></li>
+                <li><a href="#portfolio"><button>Portfolios</button></a></li>
+                <li><a href="#location"><button>Contacts</button></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <script>
+        btn_icon.addEventListener('click', function() {
+            if (this.classList.contains('fa-bars')) {
+                this.classList.remove('fa-bars');
+                this.classList.add('fa-xmark');
+            } else {
+                this.classList.remove('fa-xmark');
+                this.classList.add('fa-bars');
+            }
+        });
+    </script>
 
     <section id="title">
         <main>
@@ -355,7 +583,6 @@
 
 
 
-
     <section id="about">
         <main>
             <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
@@ -366,11 +593,9 @@
         </main>
     </section>
 
-
-
     <section id="service">
         <main>
-            <p>Services</p>
+            <p>SERVICES</p>
             <h1>What We Offer</h1>
 
             <div><span><i class="icon-screen-smartphone"></i></span>
@@ -385,7 +610,7 @@
 
             <div><span><i class="icon-like"></i></span>
                 <h2>Favorited</h2>
-                <p>Millions of users <i></i> Start Bootstrap</p>
+                <p>Millions of users <i class="fa-solid fa-heart"></i> Start Bootstrap</p>
             </div>
 
             <div><span><i class="icon-mustache"></i></span>
@@ -398,7 +623,6 @@
 
 
     </section>
-
 
 
 
@@ -418,7 +642,6 @@
 
 
 
-
     <section id="portfolio">
 
         <main>
@@ -429,28 +652,27 @@
 
 
             <div id="one">
-                <h4>Stationary</h4>
-                <p>A yellow pencil with envelopes on a clean, blue backdrop! </p>
+                <h4>STATIONARY</h4>
+                <p id="one">A yellow pencil with envelopes on a clean, blue backdrop! </p>
             </div>
 
 
             <div id="two">
                 <h4>ICE CREAM</h4>
-                <p>A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                <p id="two">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
             </div>
 
 
             <div id="three">
                 <h4>STRAWBERRIES</h4>
-                <p>Strawberries are such a tasty snack, especially with some sugar on top!</p>
+                <p id="three">Strawberries are such a tasty snack, especially with some sugar on top!</p>
             </div>
 
 
             <div id="four">
                 <h4>WORKSPACE</h4>
-                <p>A yellow workspace with some scissors, pencils, and other objects.</p>
+                <p id="four">A yellow workspace with some scissors, pencils, and other objects.</p>
             </div>
-
 
 
 
@@ -475,8 +697,35 @@
         </main>
     </section>
 
+    <section id="location">
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5757337721725!2d-122.41954182411631!3d37.776545171984864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sX%20Corp.%20HQ!5e0!3m2!1sen!2sca!4v1717857594336!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <main>
+
+            <i class="fa-brands fa-facebook-f"></i>
+
+            <i class="fa-brands fa-twitter"></i>
+
+            <i class="fa-brands fa-github"></i>
 
 
-</body>
+        </main>
 
-</html>
+
+    </section>
+
+    <section id="copyright">
+        <main>
+
+            <p>Copyright © Your Website 2023</p>
+        </main>
+
+
+
+    </section>
+
+
+</body></html>
